@@ -104,7 +104,7 @@ fn format_codeblock(elements: &str) -> String {
 }
 
 fn format_blockquote(elements: &[Block]) -> String {
-    format!("<blockquote>\n{}</blockquote>\n\n", to_html(elements))
+    format!("<blockquote class=\"blockquote\">\n{}</blockquote>\n\n", to_html(elements))
 }
 
 fn format_paragraph(elements: &[Span]) -> String {
